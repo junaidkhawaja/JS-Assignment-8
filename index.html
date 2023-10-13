@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALCULATOR</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     
+    
+
+
+    <div class="calculator-outer">
+
+        <div class="calc-header">
+            <div class="calc-logo">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Citizen_logo.svg/1200px-Citizen_logo.svg.png" />
+                <span>12-Digit Calculator</span>
+            </div>
+            <div class="calc-solar">
+                    <div class="calc-solar-inner">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <span>12 Digit - Solar Powered</span>
+            </div>
+        </div>
+        <div class="calculator-inner">
+            <div class="calculator-display">
+                <input placeholder=".0" type="text" readonly id="calc-display" name="calc-display" maxlength="12" />
+            </div>
+
+            <div class="calc-row">
+                <button class="start-button" onclick="empty();">AC</button>
+            </div>
+            <div class="calc-row">
+                <button onclick="square();">X<sup>2</sup></button>
+                <button onclick="del1();">C</button>
+                <button onclick="operator('.');">.</button>
+                <button onclick="operator('/');">/</button>
+            </div>
+            <div class="calc-row">
+                <button onclick="number('7');">7</button>
+                <button onclick="number('8');">8</button>
+                <button onclick="number('9');">9</button>
+                <button onclick="operator('*');">x</button>
+            </div>
+            <div class="calc-row">
+                <button onclick="number('4');">4</button>
+                <button onclick="number('5');">5</button>
+                <button onclick="number('6');">6</button>
+                <button onclick="operator('-');">-</button>
+            </div>
+            <div class="calc-row">
+                <button onclick="number('1');">1</button>
+                <button onclick="number('2');">2</button>
+                <button onclick="number('3');">3</button>
+                <button onclick="operator('+');">+</button>
+            </div>
+            <div class="calc-row">
+                <button onclick="number('0');">0</button>
+                <button onclick="number('00');">00</button>
+                <button onclick="operator('%');">%</button>
+                <button onclick="equals();">=</button>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">&copy; A Project by Junaid A. Khawaja.</div>
+
+<script src="app.js"></script>
+
+</body>
+</html>
